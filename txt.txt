@@ -1,0 +1,36 @@
+FIGMA 
+-- Зажимаем пробел - перетаскивание изображения по плоскости
+-- В левом углу вверху квадрат - активируем его - для того что бы можно было измерять размеры 
+-- Что бы знать ширину макета % в макете мы смотрим в левой стороне W - 1440 измеряем ширину блока по сетке - 1240
+   1240/1440  * 100 = 86% ширина макета 86%
+-- CTRL + G - Group selection - обїединения макетов в один слой
+
+.header__top>.container
+a.header__logo+nav.nav
+p.header__bottom-titlte+p.header__bottom  --- +p.header__bottom - добавит еще один тег Р
+
+CSS
+m0+p0  --- margin 0; padding 0;
+m0-auto --- argin: 0 auto;
+li - блочный элемент
+
+
+
+VISUAST
+
+-- CTRL + B - закроет дерево меню
+-- ALT + Z - перенос на новую строку если не помещается все написаное в одну строку
+-- SHIFT + 6 - ^ - означает віход из тега на уровень выше ^^ віше на 2 уровня
+-- CTRL + Backspace - если станем в конец строки которую пишем будет снова подсветка показівающая полную структуру в EMMIT
+                    - если нужно открыть путь к папке например с изобранеиями в src используем комбинацию клавиш
+-- File -> Auto Save - автоматически созаняет все изменения
+-- CTRL+SHIFT+P > beautify - выравнивание кода автоматически
+
+ TOOLS
+
+ https://fontawesome.com/v5.15/icons/times?style=solid
+ https://tpverstak.ru/flex-cheatsheet/
+ https://bennettfeely.com/clippy/ - создание любого угла изображения clip-path
+ https://fonts.google.com/
+ https://jquery.com/
+ https://kenwheeler.github.io/slick/  -- slick - слайдер
