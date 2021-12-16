@@ -34,3 +34,5 @@ VISUAST
  https://fonts.google.com/
  https://jquery.com/
  https://kenwheeler.github.io/slick/  -- slick - слайдер
+ https://active-vision.ru/icon/box-shadow/ -- генератор тени
+ https://kenwheeler.github.io/slick/ --- вкладка view on git hab скачивает style и js slick

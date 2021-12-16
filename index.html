@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/slick.css"> <!-- //все стороние бибилотеки поключаем спереди -->
+    <link rel="stylesheet" href="css/style.css" />
     <title>Trevel-test</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="header__top">
-            <div class="container">
-                <div class="header__top-wrapper">
-                    <!-- так как у нас в єтом конт находиться список Ли и лого а у лого есть выстота мы выравниваем по центру лого контейнер nav с помощью обявления контейнера в флекс и свойств align-items: center; justify-content: space-between;-->
-                    <a href="" class="header__logo">
-                        <img src="img/logo.png" alt="" srcset="">
-                    </a>
-                    <nav class="nav">
-                        <ul class="nav__menu">
-                            <!-- Прописали свойсту class ul.nav__menu in css flex-->
-                            <li class="nav__menu-list">
-                                <!-- что бы получить растоянее между ли и у последнего элемента не было отступа обращаемся к :not(:last-child) прописывае для всех отступ кроме последнего last-child -->
-                                <a href="" class="nav__menu-link">Destinantion</a>
-                            </li>
-                            <li class="nav__menu-list">
-                                <a href="" class="nav__menu-link">Service</a>
-                            </li>
-                            <li class="nav__menu-list">
-                                <a href="" class="nav__menu-link">About us</a>
-                            </li>
-                            <li class="nav__menu-list">
-                                <a href="" class="nav__menu-link">Contact</a>
-                            </li>
-                        </ul>
-                        <!-- создаем форму для поиска иконки -->
-                        <!-- form.header__top-form>input.input-search+btn.btn.btn-search -->
-                        <form action="" class="header__top-form">
-                            <input type="text" class="input-search">
-                            <button type="submit" class="btn btn-search"></button>
-                        </form>
-                        <div class="mobile-menu"></div>
-                    </nav>
-                </div>
-            </div>
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-wrapper">
+            <!-- так как у нас в єтом конт находиться список Ли и лого а у лого есть выстота мы выравниваем по центру лого контейнер nav с помощью обявления контейнера в флекс и свойств align-items: center; justify-content: space-between;-->
+            <a href="" class="header__logo">
+              <img src="img/logo.png" alt="" srcset="" />
+            </a>
+            <nav class="nav">
+              <ul class="nav__menu">
+                <!-- Прописали свойсту class ul.nav__menu in css flex-->
+                <li class="nav__menu-list">
+                  <!-- что бы получить растоянее между ли и у последнего элемента не было отступа обращаемся к :not(:last-child) прописывае для всех отступ кроме последнего last-child -->
+                  <a href="" class="nav__menu-link">Destinantion</a>
+                </li>
+                <li class="nav__menu-list">
+                  <a href="" class="nav__menu-link">Service</a>
+                </li>
+                <li class="nav__menu-list">
+                  <a href="" class="nav__menu-link">About us</a>
+                </li>
+                <li class="nav__menu-list">
+                  <a href="" class="nav__menu-link">Contact</a>
+                </li>
+              </ul>
+              <!-- создаем форму для поиска иконки -->
+              <!-- form.header__top-form>input.input-search+btn.btn.btn-search -->
+              <form action="" class="header__top-form">
+                <input type="text" class="input-search" />
+                <button type="submit" class="btn btn-search"></button>
+              </form>
+              <div class="mobile-menu"></div>
+            </nav>
+          </div>
         </div>
-        <div class="header__bottom">
-            <div class="container">
-                <!-- .container>.header__bottom-wrapper>p.header__bottom-titlte+p.header__bottom-text+btn.btn.header__bottom-btn*2 -->
-                <div class="header__bottom-wrapper">
-                    <p class="header__bottom-titlte">Get the best deals on Easy Travel trips</p>
-                    <p class="header__bottom-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
-                        unknown printer</p>
-                    <div class="header__bottom-block">
-                        <a class="header__bottom-link">
-                            <span>Download on the</span>
-                            <span>Apple Store</span>
-                        </a>
-                        <a class="header__bottom-link">
-                            <span>Get it from</span>
-                            <span>Google Play</span>
-                        </a>
-                    </div>
-                </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <!-- .container>.header__bottom-wrapper>p.header__bottom-titlte+p.header__bottom-text+btn.btn.header__bottom-btn*2 -->
+          <div class="header__bottom-wrapper">
+            <p class="header__bottom-titlte">
+              Get the best deals on Easy Travel trips
+            </p>
+            <p class="header__bottom-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer
+            </p>
+            <div class="header__bottom-block">
+              <a class="header__bottom-link">
+                <span>Download on the</span>
+                <span>Apple Store</span>
+              </a>
+              <a class="header__bottom-link">
+                <span>Get it from</span>
+                <span>Google Play</span>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+    <!-- end header -->
 
+    <div class="carusel">
+      <div class="container">
+        <div class="carusel-slider">
+          <div class="carusel__block">
+            <img src="img/netflix.png" alt="" class="carusel__img" />
+          </div>
+          <div class="carusel__block">
+            <img src="img/paypal.png" alt="" class="carusel__img" />
+          </div>
+          <div class="carusel__block">
+            <img src="img/ebay.png" alt="" class="carusel__img" />
+          </div>
+          <div class="carusel__block">
+            <img src="img/amazon.png" alt="" class="carusel__img" />
+          </div>
+          <div class="carusel__block">
+            <img src="img/microft.png" alt="" class="carusel__img" />
+          </div>
+          <div class="carusel__block">
+            <img src="img/microft.png" alt="" class="carusel__img" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end carusel -->
+
+    <section class="registrion">
+        <div class="container">
+            <p class="registrion__title inner-title"></p>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
