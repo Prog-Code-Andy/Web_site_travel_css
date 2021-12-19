@@ -1,12 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap");
 
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?8nopwu');
+  src:  url('../fonts/icomoon.eot?8nopwu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?8nopwu') format('truetype'),
+    url('../fonts/icomoon.woff?8nopwu') format('woff'),
+    url('../fonts/icomoon.svg?8nopwu#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-headphones:before {
+  content: "\e900";
+  color: var(--color-green);
+}
+.icon-men:before {
+  content: "\e901";
+  color: var(--color-green);
+}
+.icon-price:before {
+  content: "\e902";
+  color: var(--color-green);
+}
+.icon-shake_hands:before {
+  content: "\e903";
+  color: var(--color-green);
+}
+
+
 :root {
   --color-black: #000;
   --color-grey: #555555;
   --color-black-light: #222222;
   --color-white: #fff;
   --color-ultra-grey: #666;
+  --color-green: #1ec28b;
 }
+
 
 *, /* *  обозначает что касается абсолюнто всех элементов*/
 *::before,
@@ -41,6 +88,13 @@ input {
   background: none;
 }
 
+.inner-title {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--color-black);
+}
+
 body {
   font-size: 18px;
   font-family: "Red Hat Text", sans-serif;
@@ -50,6 +104,7 @@ body {
   width: 85%; /* максимальная ширина может біть меньше но больше ни как, если задать width: - 
     значит ширина неможет ни больше ни меньше  будет только сколько она задана В РХ!!!, прценті в основном использовать для ширины
     */
+  max-width: 1240px; /* Добавили специально макисмальую ширину для 1240 если выйдет за пределы то макет не поплывет */
   margin: 0 auto;
 }
 
@@ -195,5 +250,98 @@ body {
 /* end header */
 
 .carusel {
-    padding: 129px 0;
+  padding: 129px 0;
+}
+
+/* section registretion */
+
+.registrion {
+  padding-bottom: 117px;
+}
+
+.registration__top-left {
+  display: flex;
+  align-items: center;
+  box-shadow: 4px 10px 20px rgba(184, 201, 209, 0.26);
+  border-radius: 40px;
+}
+
+.registration__select {
+  padding: 16px 50px 18px 24px;
+  border: none;
+}
+
+.registrion__title {
+  margin-bottom: 30px;
+}
+
+.data-in {
+  padding: 16px 50px 18px 24px;
+}
+
+.data-out {
+  padding: 16px 50px 18px 24px;
+}
+
+.input-search {
+  width: 107px;
+  padding: 16px 27px 16px 28px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  border-radius: 50px;
+}
+
+.btn--green {
+  color: var(--color-white);
+  background: var(--color-green);
+}
+
+.registration__top-link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--color-green);
+  text-decoration: underline;
+}
+
+.registration__top_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* gallary registaration */
+
+.registrarion__bottom-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.registration__bottom-block {
+  /* почему задали всему блоку max-width: 398px если у нас 2 первых по 608px */
+  max-width: 398px;
+  margin-bottom: 23px;
+}
+
+.registration__bottom-block:first-child {
+  max-width: 608px;
+}
+
+.registration__bottom-block:nth-child(2) {
+  max-width: 608px;
+}
+
+.registration__bottom-block:nth-child(3),
+.registration__bottom-block:nth-child(4),
+/* .header__bottom-block:nth-child  мі задали я прописал обращение на 289 строке*/
+.registration__bottom-block:last-child {
+  max-width: 398px;
+}
+
+.registration__bottom-img {
+  width: 100%;
 }
