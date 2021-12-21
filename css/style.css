@@ -29,19 +29,19 @@
 
 .icon-headphones:before {
   content: "\e900";
-  color: var(--color-green);
+  color: #1ec28b;
 }
 .icon-men:before {
   content: "\e901";
-  color: var(--color-green);
+  color: #1ec28b;
 }
 .icon-price:before {
   content: "\e902";
-  color: var(--color-green);
+  color: #1ec28b;
 }
 .icon-shake_hands:before {
   content: "\e903";
-  color: var(--color-green);
+  color: #1ec28b;
 }
 
 
@@ -52,6 +52,9 @@
   --color-white: #fff;
   --color-ultra-grey: #666;
   --color-green: #1ec28b;
+  --color-light-grey: #333333;
+  --color-grey-text: #5F5F5F;
+  --bg-grey: #E5E5E5;
 }
 
 
@@ -73,6 +76,11 @@ a {
   text-decoration: none;
   color: var(--color-black);
   cursor: pointer;
+}
+
+.link--green {
+  background: var(--color-green);
+  color: var(--color-white);
 }
 
 .btn {
@@ -344,4 +352,43 @@ body {
 
 .registration__bottom-img {
   width: 100%;
+}
+
+/* section hiroy */
+
+.heroy__wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.heroy__block{
+  width: 298px;
+  padding: 31px 20px 51px 20px;
+}
+
+.heroy__item{
+  width: 100px;
+  height: 100px;
+  background: rgba(30, 194, 139, 0.02);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroy__item span{
+  font-size: 48px;
+}
+
+.heroy__title{
+  margin: 54px 0 12px 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--color-grey);
+}
+
+.heroy__text{
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-grey-text);
 }
