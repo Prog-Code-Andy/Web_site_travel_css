@@ -364,7 +364,28 @@ body {
 .heroy__block{
   width: 298px;
   padding: 31px 20px 51px 20px;
+  cursor: pointer;
+  transition: 0.2s;
 }
+
+.heroy__block:hover .heroy__title{
+  color: var(--color-green);
+}
+
+.heroy__block:hover{
+  background: var(--color-white);
+  box-shadow: 20px 20px 40px rgba(0, 39, 26, 0.06);
+  transition: 0.2s;
+}
+
+.heroy__block:hover .heroy__item{
+  background: var(--color-green);
+}
+
+.heroy__block:hover .heroy__item span:before{
+  color: var(--color-white);
+}
+
 
 .heroy__item{
   width: 100px;
