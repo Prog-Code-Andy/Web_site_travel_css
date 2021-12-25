@@ -1,20 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@300;400;500;600;700&display=swap");
 
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?8nopwu');
-  src:  url('../fonts/icomoon.eot?8nopwu#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?8nopwu') format('truetype'),
-    url('../fonts/icomoon.woff?8nopwu') format('woff'),
-    url('../fonts/icomoon.svg?8nopwu#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?8nopwu");
+  src: url("../fonts/icomoon.eot?8nopwu#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?8nopwu") format("truetype"),
+    url("../fonts/icomoon.woff?8nopwu") format("woff"),
+    url("../fonts/icomoon.svg?8nopwu#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -44,7 +45,6 @@
   color: #1ec28b;
 }
 
-
 :root {
   --color-black: #000;
   --color-grey: #555555;
@@ -53,13 +53,11 @@
   --color-ultra-grey: #666;
   --color-green: #1ec28b;
   --color-light-grey: #333333;
-  --color-grey-text: #5F5F5F;
-  --color-numb-text: #01385F;
-  --bg-grey: #E5E5E5;
-  --bg-grey-light: #F1FBF8;
-
+  --color-grey-text: #5f5f5f;
+  --color-numb-text: #01385f;
+  --bg-grey: #e5e5e5;
+  --bg-grey-light: #f1fbf8;
 }
-
 
 *, /* *  обозначает что касается абсолюнто всех элементов*/
 *::before,
@@ -326,14 +324,14 @@ body {
 
 /* gallary registaration */
 
-.registrarion__bottom-wrapper{
+.registrarion__bottom-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .registration__bottom-block {
-  /* почему задали всему блоку max-width: 398px если у нас 2 первых по 608px */
+  /*? почему задали всему блоку max-width: 398px если у нас 2 первых по 608px */
   max-width: 398px;
   margin-bottom: 23px;
 }
@@ -359,42 +357,41 @@ body {
 
 /* section hiroy */
 
-.heroy{
+.heroy {
   padding-bottom: 70px;
 }
 
-.heroy__wrapper{
+.heroy__wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.heroy__block{
+.heroy__block {
   width: 298px;
   padding: 31px 20px 51px 20px;
   cursor: pointer;
   transition: 0.2s;
 }
 
-.heroy__block:hover .heroy__title{
+.heroy__block:hover .heroy__title {
   color: var(--color-green);
 }
 
-.heroy__block:hover{
+.heroy__block:hover {
   background: var(--color-white);
   box-shadow: 20px 20px 40px rgba(0, 39, 26, 0.06);
   transition: 0.2s;
 }
 
-.heroy__block:hover .heroy__item{
+.heroy__block:hover .heroy__item {
   background: var(--color-green);
 }
 
-.heroy__block:hover .heroy__item span:before{
+.heroy__block:hover .heroy__item span:before {
   color: var(--color-white);
 }
 
-
-.heroy__item{
+.heroy__item {
   width: 100px;
   height: 100px;
   background: rgba(30, 194, 139, 0.02);
@@ -403,11 +400,11 @@ body {
   align-items: center;
 }
 
-.heroy__item span{
+.heroy__item span {
   font-size: 48px;
 }
 
-.heroy__title{
+.heroy__title {
   margin: 54px 0 12px 0;
   font-weight: 500;
   font-size: 24px;
@@ -415,7 +412,7 @@ body {
   color: var(--color-grey);
 }
 
-.heroy__text{
+.heroy__text {
   font-size: 14px;
   line-height: 24px;
   color: var(--color-grey-text);
@@ -424,41 +421,41 @@ body {
 /* block travel */
 
 .travel {
-  padding-top: 70px;
+  padding: 70px 0 23px 0;
 }
 
 .travel__block-left {
-    max-width: 608px;
-    padding: 60px 36px;
-    background: var(--bg-grey-light);
+  max-width: 608px;
+  padding: 60px 36px;
+  background: var(--bg-grey-light);
 }
 
-.travel__block-right{
+.travel__block-right {
   width: 609px;
   position: relative;
-} 
+}
 
 .travel__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .travel__title {
-    font-weight: 500;
-    font-size: 60px;
-    line-height: 70px;
-    color: var(--color-black-light);
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 70px;
+  color: var(--color-black-light);
 }
 
 .travel__text {
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 32px;
-    color: var(--color-grey);
-    margin: 20px 0 40px 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--color-grey);
+  margin: 20px 0 40px 0;
 }
-/* ! Travel any corner Вопрос по кнопке padding и dispaly block в закоментированном я не использую block а разняю все psddingon так можно? */
+/* ? Travel any corner Вопрос по кнопке padding и dispaly block в закоментированном я не использую block а разняю все psddingon так можно? */
 /* .travel__link.link--green {
     width: 185px;
     font-weight: 500;
@@ -469,49 +466,96 @@ body {
 } */
 
 .travel__link {
-    width: 185px;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
-    padding: 16px 0;
-    border-radius: 12px;
-    text-align: center;
-    display: block;
+  width: 185px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 16px 0;
+  border-radius: 12px;
+  text-align: center;
+  display: block;
 }
 
 .block-right__fuche {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    bottom: 26px;
-    padding: 0 26px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 26px;
+  padding: 0 26px;
 }
-/*! Указали max-width: 180px; - у меня блок с данной величеной только средний растягивается если ставлю width: 180px; - то применяется ко всем div на нашем макете мы изменили padding - по бокам 25px*/
+/*? Указали max-width: 180px; - у меня блок с данной величеной только средний растягивается если ставлю width: 180px; - то применяется ко всем div на нашем макете мы изменили padding - по бокам 25px*/
 .block-right__content {
-    background: var(--color-white);
-    box-shadow: 15px 15px 30px rgb(46 118 94 / 29%);
-    padding: 14px 26px;
-    width: 180px;
-    text-align: center;
+  background: var(--color-white);
+  box-shadow: 15px 15px 30px rgb(46 118 94 / 29%);
+  padding: 14px 26px;
+  width: 180px;
+  text-align: center;
 }
-/*! Нем огу понять работу not Мы указывваем селектор который не должен содержать*/
+/*? Нем огу понять работу not Мы указывваем селектор который не должен содержать*/
 .block-right__content:not(:last-child) {
   margin-right: 8px;
 }
 
 .block-right__number {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 48px;
-    color: var(--color-numb-text);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: var(--color-numb-text);
 }
 
 .block-right__text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 24px;
-    text-align: center;
-    color: var(--color-grey-text);
-    margin-bottom: 6px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-grey-text);
+  margin-bottom: 6px;
+}
+
+/** Не выравнивалась картинка по правому блоку - прописали свойсва для картинки все выравнялось */
+.block-right__img {
+  width: 100%;
+  display: block;
+}
+
+/* <!--  section video --> */
+
+.video {
+  max-width: 1240px;
+  margin: 0 auto;
+  background: url(../img/video-bg.jpg) no-repeat center;
+  /* сделали отступы для расположени кнопки картинка на стороне браузера растянулась*/
+  padding: 230px 0;
+  position: relative;
+}
+
+/*? Полностью Объяснить ход мысли по работе с блоком и отцентровкой элемента по центру */
+.btn-block {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn-video {
+  display: block;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.178);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.btn-video::before {
+    content: "";
+    position: absolute;
+    background: url(../img/button-video.png) no-repeat center;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
