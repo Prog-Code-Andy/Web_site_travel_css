@@ -10,4 +10,13 @@ $(document).ready(function(){
         autoplay: true,
         autoplaySpeed: 2000
     });
+
+    $(".testimonial__slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false, 
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
 });
