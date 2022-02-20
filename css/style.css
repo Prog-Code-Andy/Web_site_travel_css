@@ -15,7 +15,8 @@
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/fonts/icomoon.eot?8nopwu");
-  src: url("../fonts/fonts/icomoon.eot?8nopwu#iefix") format("embedded-opentype"),
+  src: url("../fonts/fonts/icomoon.eot?8nopwu#iefix")
+      format("embedded-opentype"),
     url("../fonts/fonts/icomoon.ttf?8nopwu") format("truetype"),
     url("../fonts/fonts/icomoon.woff?8nopwu") format("woff"),
     url("../fonts/fonts/icomoon.svg?8nopwu#icomoon") format("svg");
@@ -575,14 +576,14 @@ body {
 }
 
 .btn-video::before {
-    content: "";
-    position: absolute;
-    background: url(../img/button-video.png) no-repeat center;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  content: "";
+  position: absolute;
+  background: url(../img/button-video.png) no-repeat center;
+  width: 100px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .testimonial {
@@ -599,7 +600,7 @@ body {
   max-width: 723px;
 }
 
-.testimonial__block-left img{
+.testimonial__block-left img {
   width: 100%;
   display: block;
 }
@@ -607,7 +608,6 @@ body {
 .testimonial__block-right {
   max-width: 491px;
 }
-
 
 .testimonial__title {
   width: 677px;
@@ -633,10 +633,10 @@ body {
 }
 
 .testimonial__slider-text {
-    font-size: 18px;
-    line-height: 32px;
-    text-align: center;
-    color: var(--color-grey);
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: var(--color-grey);
 }
 
 .testimonial__link {
@@ -649,4 +649,27 @@ body {
   width: 164px;
   margin: 34px auto 0;
   text-align: center;
+}
+
+/* .testimonial END */
+/* footer start */
+
+.footer {
+  background-color: var(--bg-grey-light);
+  padding: 82px 0 46px 0;
+}
+
+.footer__adress a {
+  display: block;     
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--color-grey);
+}
+
+.footer__logo {
+  margin-bottom: 49px;
+}
+
+.footer__link-email {
+  margin-bottom: 16px;
 }
