@@ -12,6 +12,18 @@
   font-display: block;
 }
 
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/fonts/icomoon.eot?8nopwu");
+  src: url("../fonts/fonts/icomoon.eot?8nopwu#iefix") format("embedded-opentype"),
+    url("../fonts/fonts/icomoon.ttf?8nopwu") format("truetype"),
+    url("../fonts/fonts/icomoon.woff?8nopwu") format("woff"),
+    url("../fonts/fonts/icomoon.svg?8nopwu#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -43,6 +55,19 @@
 .icon-shake_hands:before {
   content: "\e903";
   color: #1ec28b;
+}
+
+.icon-facebook2:before {
+  content: "\ea91";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
 }
 
 :root {

@@ -55,3 +55,4 @@ VISUAST
  https://active-vision.ru/icon/box-shadow/ -- генератор тени
  https://kenwheeler.github.io/slick/ --- вкладка view on git hab скачивает style и js slick
  https://icomoon.io/app/#/select ---- tool для изменения картинок в строчные элементы
+ 
