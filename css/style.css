@@ -136,15 +136,14 @@ body {
   font-family: "Red Hat Text", sans-serif;
 }
 
-.container {
-  width: 85%; /* максимальная ширина может біть меньше но больше ни как, если задать width: - 
-    значит ширина неможет ни больше ни меньше  будет только сколько она задана В РХ!!!, прценті в основном использовать для ширины
-    */
-  max-width: 1240px; /* Добавили специально макисмальую ширину для 1240 если выйдет за пределы то макет не поплывет */
-  margin: 0 auto;
+.overlay{
+  overflow-y: hidden;
 }
 
-.header__top {
+.container {
+  max-width: 1240px; /* Добавили специально макисмальую ширину для 1240 если выйдет за пределы то макет не поплывет */
+  /* min-width: 320px; */
+  margin: 0 auto;
 }
 
 .header__top-wrapper {
@@ -153,7 +152,34 @@ body {
   justify-content: space-between;
 }
 
-.header__logo {
+.header__top {
+  padding: 42px 10px 30px 10px;
+  transition: 1s;
+}
+
+.header__top-form {
+  display: flex;
+  align-items: center;
+}
+
+.header__top.top-fixed {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 12px 9px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 0px 12px 9px 0px rgba(34, 60, 80, 0.2);
+box-shadow: 0px 12px 9px 0px rgba(34, 60, 80, 0.2);
+}
+
+.header__bottom-titlte{
+  width: 637px;
+  height: 170px;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 85px;
 }
 
 .nav {
@@ -166,19 +192,15 @@ body {
   justify-content: flex-end; /* сказали блоку коль ты флекс иди ка в конец края блока */
 }
 
-.nav__menu {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav__menu-list:not(:last-child) {
-  margin-right: 30px;
-}
 
 .nav__menu-link {
   line-height: 24px;
   letter-spacing: 0.15px;
   color: var(--color-black-light);
+}
+
+.nav__menu-list {
+  padding-right: 30px;
 }
 
 .input-search {
@@ -195,6 +217,7 @@ body {
 }
 
 .mobile-menu {
+  display: none;
   width: 24px;
   height: 24px;
   background: url(../img/mobile-menu.svg) no-repeat center;
@@ -289,10 +312,18 @@ body {
   padding: 129px 0;
 }
 
+.carusel__block {
+  text-align: center;
+}
+
+.carusel__block .carusel__img {
+  display: inline-block;
+}
+
 /* section registretion */
 
 .registrion {
-  padding-bottom: 117px;
+  padding: 0 10px 117px 10px;
 }
 
 .registration__top-left {
@@ -354,7 +385,7 @@ body {
 .registrarion__bottom-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .registration__bottom-block {
@@ -465,7 +496,8 @@ body {
 .travel__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center;
+  flex-wrap: wrap; */
 }
 
 .travel__title {
@@ -588,7 +620,7 @@ body {
 }
 
 .testimonial {
-  padding: 140px 0;
+  padding: 140px 10px 0 10px;
 }
 
 .testimonial__wrapper {
@@ -702,6 +734,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 0 10px 0 10px
 }
 
 .footer__block.footer__adress {
@@ -739,4 +772,31 @@ body {
 
 .footer__subscribe .footer__title {
   margin-bottom: 20px;
+}
+
+.footer__subcribe-text {
+  margin: 24px 0 58px 0;
+  line-height: 30px;
+  color: var(--color-grey);
+}
+
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 400px;
+}
+
+.footer__form-input {
+  background: #F1FBF8;
+  padding: 16px 20px;
+  width: 300px;
+}
+
+.footer__btn.link--green {
+  width: 100px;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
 }
